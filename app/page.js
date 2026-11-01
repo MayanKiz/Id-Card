@@ -12,7 +12,7 @@ export default function Home() {
         strapLength={0.7}
         interactive
         intro
-        style={{ width: 'min(80vw, 520px)', height: '760px' }}
+        style={{ width: '100vw', height: '100vh' }}
       />
     </main>
   );
