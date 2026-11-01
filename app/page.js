@@ -4,6 +4,8 @@ export default function Home() {
   return (
     <main className="page-shell">
       <Lanyard
+        frontImage="/id-front.png"
+        backImage="/id-back.png"
         cardColor="#ffffff"
         strapColor="#111111"
         finish="glossy"
