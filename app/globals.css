@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root{color-scheme:dark;--bg:#090d0b;--text:#f2f5f1;--muted:#8c9990;--accent:#a5d5b4}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Manrope,Arial,sans-serif}
+body{min-height:100vh}
+.shell{min-height:100vh;display:flex;flex-direction:column;padding:0 5.5vw;overflow:hidden;background:radial-gradient(ellipse at 75% 47%,rgba(39,81,60,.22),transparent 42%),var(--bg)}
+.topbar{height:86px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.09)}
+.brand{font-size:25px;font-weight:800;letter-spacing:-1.8px;color:#f4f6f2;text-decoration:none}.brand span{color:var(--accent)}
+.status,.eyebrow,.hint,.stage-label,footer{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:1.7px}
+.status{color:#b0bdb4;display:flex;align-items:center;gap:9px}.status i{width:6px;height:6px;background:#9ddbb0;border-radius:50%;box-shadow:0 0 12px #9ddbb0}
+.hero{flex:1;min-height:650px;display:grid;grid-template-columns:.82fr 1.18fr;align-items:center;gap:2vw}
+.copy{position:relative;z-index:2;padding:35px 0}
+.eyebrow{color:var(--accent);margin:0 0 28px}
+h1{font-size:clamp(54px,7.5vw,108px);line-height:.97;letter-spacing:-.085em;margin:0;font-weight:600}
+h1 span{color:#a5d5b4}
+.description{max-width:360px;color:#9ca9a0;font-size:15px;line-height:1.8;margin:30px 0 27px}
+.hint{color:#87958b;font-size:9px;letter-spacing:1.2px}.hint span{font-size:16px;color:var(--accent);margin-right:10px}.hint b{margin:0 8px;color:#56665b}
+.stage{height:min(72vh,690px);min-height:480px;position:relative;cursor:grab}.stage:active{cursor:grabbing}.stage canvas{outline:none}
+.stage-label{position:absolute;bottom:24px;left:26px;right:26px;display:flex;justify-content:space-between;color:#65746a;font-size:9px;pointer-events:none}
+.stage-label span{color:#a5b2a8}
+footer{height:65px;border-top:1px solid rgba(255,255,255,.09);display:flex;align-items:center;justify-content:space-between;color:#647168;font-size:9px;letter-spacing:1.3px}
+@media(max-width:760px){.shell{padding:0 22px}.topbar{height:70px}.hero{grid-template-columns:1fr;gap:0;padding-top:38px;min-height:0}.copy{padding:0}.eyebrow{margin-bottom:18px}h1{font-size:clamp(58px,15vw,90px)}.description{font-size:14px;margin:20px 0}.stage{height:54vh;min-height:370px;margin-top:-8px}.stage-label{left:10px;right:10px;bottom:12px}footer{height:55px}}
